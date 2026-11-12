@@ -4,14 +4,14 @@
 --------------------------------------------------------------------------- */
 
 :root {
-  --text: #f2f6fc;
-  --muted: #93a2b8;
-  --bg: #070a12;
-  --border: rgba(255, 255, 255, 0.09);
-  --border-strong: rgba(255, 255, 255, 0.18);
+  --text: #3b2430;
+  --muted: #82606e;
+  --bg: #fff4f7;
+  --border: rgba(59, 36, 48, 0.09);
+  --border-strong: rgba(59, 36, 48, 0.16);
   --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Text",
     "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 *,
@@ -47,11 +47,11 @@ input {
 /* --- page shell ---------------------------------------------------------- */
 
 .page {
-  --accent: #7cc4ff;
-  --accent-2: #a78bfa;
-  --accent-soft: rgba(124, 196, 255, 0.14);
-  --glow-1: rgba(64, 140, 255, 0.22);
-  --glow-2: rgba(139, 92, 246, 0.16);
+  --accent: #b02f5c;
+  --accent-2: #d47fc0;
+  --accent-soft: rgba(176, 47, 92, 0.1);
+  --glow-1: rgba(255, 173, 200, 0.55);
+  --glow-2: rgba(214, 170, 255, 0.42);
 
   position: relative;
   isolation: isolate;
@@ -64,51 +64,51 @@ input {
 }
 
 .page[data-band="freezing"] {
-  --accent: #b9e6ff;
-  --accent-2: #83b4ff;
-  --accent-soft: rgba(185, 230, 255, 0.14);
-  --glow-1: rgba(96, 170, 255, 0.2);
-  --glow-2: rgba(129, 140, 248, 0.16);
+  --accent: #7d4b96;
+  --accent-2: #b47fc8;
+  --accent-soft: rgba(125, 75, 150, 0.12);
+  --glow-1: rgba(214, 180, 255, 0.5);
+  --glow-2: rgba(255, 190, 220, 0.42);
 }
 
 .page[data-band="cold"] {
-  --accent: #8fd3ff;
-  --accent-2: #6ea8ff;
-  --accent-soft: rgba(143, 211, 255, 0.14);
-  --glow-1: rgba(72, 154, 255, 0.22);
-  --glow-2: rgba(96, 130, 246, 0.16);
+  --accent: #8f3f8a;
+  --accent-2: #c07fb8;
+  --accent-soft: rgba(143, 63, 138, 0.11);
+  --glow-1: rgba(232, 170, 235, 0.45);
+  --glow-2: rgba(255, 190, 215, 0.4);
 }
 
 .page[data-band="cool"] {
-  --accent: #7cc4ff;
-  --accent-2: #a78bfa;
-  --accent-soft: rgba(124, 196, 255, 0.14);
-  --glow-1: rgba(64, 140, 255, 0.22);
-  --glow-2: rgba(139, 92, 246, 0.16);
+  --accent: #b02f5c;
+  --accent-2: #d47fc0;
+  --accent-soft: rgba(176, 47, 92, 0.1);
+  --glow-1: rgba(255, 173, 200, 0.55);
+  --glow-2: rgba(214, 170, 255, 0.42);
 }
 
 .page[data-band="mild"] {
-  --accent: #6ee7b7;
-  --accent-2: #38bdf8;
-  --accent-soft: rgba(110, 231, 183, 0.13);
-  --glow-1: rgba(45, 212, 191, 0.16);
-  --glow-2: rgba(56, 189, 248, 0.16);
+  --accent: #b52f66;
+  --accent-2: #d47fb0;
+  --accent-soft: rgba(181, 47, 102, 0.11);
+  --glow-1: rgba(255, 165, 200, 0.55);
+  --glow-2: rgba(220, 175, 255, 0.4);
 }
 
 .page[data-band="warm"] {
-  --accent: #ffc46b;
-  --accent-2: #ff8a5c;
-  --accent-soft: rgba(255, 196, 107, 0.14);
-  --glow-1: rgba(251, 146, 60, 0.18);
-  --glow-2: rgba(244, 114, 182, 0.13);
+  --accent: #b83346;
+  --accent-2: #e08f98;
+  --accent-soft: rgba(184, 51, 70, 0.11);
+  --glow-1: rgba(255, 155, 165, 0.5);
+  --glow-2: rgba(255, 190, 210, 0.4);
 }
 
 .page[data-band="hot"] {
-  --accent: #ff9a76;
-  --accent-2: #ff5d7a;
-  --accent-soft: rgba(255, 154, 118, 0.15);
-  --glow-1: rgba(239, 68, 68, 0.2);
-  --glow-2: rgba(236, 72, 153, 0.15);
+  --accent: #a8263f;
+  --accent-2: #d97f8c;
+  --accent-soft: rgba(168, 38, 63, 0.12);
+  --glow-1: rgba(255, 130, 150, 0.45);
+  --glow-2: rgba(255, 185, 200, 0.4);
 }
 
 .aurora {
@@ -119,7 +119,7 @@ input {
   background:
     radial-gradient(900px 540px at 10% -10%, var(--glow-1), transparent 62%),
     radial-gradient(820px 560px at 96% 4%, var(--glow-2), transparent 60%),
-    radial-gradient(1100px 700px at 50% 112%, rgba(255, 255, 255, 0.05), transparent 62%),
+    radial-gradient(1100px 700px at 50% 112%, rgba(255, 255, 255, 0.9), transparent 62%),
     var(--bg);
   transition: background 1s ease;
 }
@@ -172,7 +172,7 @@ input {
   padding: 9px 14px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.72);
   color: var(--text);
   font-size: 14px;
   cursor: pointer;
@@ -180,7 +180,7 @@ input {
 }
 
 .place-button:hover {
-  background: rgba(255, 255, 255, 0.09);
+  background: #ffffff;
   border-color: var(--border-strong);
 }
 
@@ -195,7 +195,7 @@ input {
   padding: 3px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .unit-toggle button {
@@ -212,7 +212,7 @@ input {
 
 .unit-toggle button[aria-pressed="true"] {
   background: var(--accent);
-  color: #071320;
+  color: #ffffff;
 }
 
 /* --- layout -------------------------------------------------------------- */
@@ -231,14 +231,14 @@ input {
   border-radius: 26px;
   background: linear-gradient(
     155deg,
-    rgba(255, 255, 255, 0.075),
-    rgba(255, 255, 255, 0.026)
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.62)
   );
   box-shadow:
-    0 30px 80px -46px rgba(0, 0, 0, 0.95),
-    inset 0 1px 0 rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(22px) saturate(125%);
-  -webkit-backdrop-filter: blur(22px) saturate(125%);
+    0 26px 70px -38px rgba(143, 52, 84, 0.45),
+    inset 0 1px 0 #ffffff;
+  backdrop-filter: blur(22px) saturate(120%);
+  -webkit-backdrop-filter: blur(22px) saturate(120%);
 }
 
 .hero-grid {
@@ -321,7 +321,7 @@ input {
 .temperature-value {
   font-size: clamp(5.4rem, 14vw, 9rem);
   font-variant-numeric: tabular-nums;
-  background: linear-gradient(180deg, #ffffff 35%, rgba(255, 255, 255, 0.68));
+  background: linear-gradient(180deg, #3b2430 25%, rgba(59, 36, 48, 0.62));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -341,7 +341,7 @@ input {
   align-items: center;
   gap: 10px;
   margin: 0;
-  color: rgba(242, 246, 252, 0.86);
+  color: rgba(59, 36, 48, 0.86);
   font-size: 16px;
 }
 
@@ -458,7 +458,7 @@ input {
 
 .ring-track {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.08);
+  stroke: rgba(194, 58, 104, 0.14);
   stroke-width: 9;
 }
 
@@ -561,7 +561,7 @@ input {
   padding-bottom: 6px;
   scroll-snap-type: x proximity;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.16) transparent;
+  scrollbar-color: rgba(194, 58, 104, 0.22) transparent;
 }
 
 .hourly-track::-webkit-scrollbar {
@@ -570,7 +570,7 @@ input {
 
 .hourly-track::-webkit-scrollbar-thumb {
   border-radius: 99px;
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(194, 58, 104, 0.22);
 }
 
 .hour {
@@ -646,7 +646,7 @@ input {
 
 .footer a {
   color: var(--text);
-  text-decoration-color: rgba(255, 255, 255, 0.28);
+  text-decoration-color: rgba(59, 36, 48, 0.25);
   text-underline-offset: 3px;
 }
 
@@ -665,7 +665,7 @@ input {
 }
 
 .refresh-button:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(194, 58, 104, 0.07);
   color: var(--text);
 }
 
@@ -683,10 +683,10 @@ input {
 .error-banner {
   margin: 0;
   padding: 11px 16px;
-  border: 1px solid rgba(255, 138, 92, 0.28);
+  border: 1px solid rgba(194, 58, 104, 0.24);
   border-radius: 14px;
-  background: rgba(255, 138, 92, 0.1);
-  color: #ffc3a8;
+  background: rgba(194, 58, 104, 0.08);
+  color: #9c2344;
   font-size: 12.5px;
 }
 
@@ -723,7 +723,7 @@ input {
   border: 0;
   border-radius: 999px;
   background: var(--accent);
-  color: #071320;
+  color: #ffffff;
   font-size: 13.5px;
   font-weight: 600;
   cursor: pointer;
@@ -740,7 +740,7 @@ input {
   background: linear-gradient(
     100deg,
     transparent 20%,
-    rgba(255, 255, 255, 0.06) 46%,
+    rgba(255, 255, 255, 0.75) 46%,
     transparent 72%
   );
   background-size: 220% 100%;
@@ -766,7 +766,7 @@ input {
   width: 54%;
   height: 13px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(194, 58, 104, 0.1);
 }
 
 .skeleton-line.short {
@@ -781,7 +781,7 @@ input {
   width: 180px;
   height: 92px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(194, 58, 104, 0.1);
 }
 
 .skeleton-circle {
@@ -789,7 +789,7 @@ input {
   height: 158px;
   margin: auto;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(194, 58, 104, 0.09);
 }
 
 /* --- location dialog ----------------------------------------------------- */
@@ -801,9 +801,9 @@ input {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 24px;
-  background: #0c1220;
+  background: #fffafb;
   color: var(--text);
-  box-shadow: 0 50px 140px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 50px 140px rgba(120, 45, 72, 0.3);
 }
 
 .location-dialog[open] {
@@ -811,7 +811,7 @@ input {
 }
 
 .location-dialog::backdrop {
-  background: rgba(4, 7, 14, 0.7);
+  background: rgba(90, 45, 65, 0.3);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 }
@@ -853,14 +853,14 @@ input {
   height: 34px;
   border: 1px solid var(--border);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.7);
   color: var(--muted);
   cursor: pointer;
 }
 
 .icon-button:hover {
   color: var(--text);
-  background: rgba(255, 255, 255, 0.09);
+  background: #ffffff;
 }
 
 .search-field {
@@ -870,12 +870,12 @@ input {
   padding: 11px 14px;
   border: 1px solid var(--border);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.8);
   transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .search-field:focus-within {
-  border-color: rgba(255, 255, 255, 0.26);
+  border-color: rgba(194, 58, 104, 0.45);
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
@@ -906,7 +906,7 @@ input {
   flex: none;
   width: 14px;
   height: 14px;
-  border: 2px solid rgba(255, 255, 255, 0.18);
+  border: 2px solid rgba(59, 36, 48, 0.15);
   border-top-color: var(--accent);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
@@ -926,7 +926,7 @@ input {
 }
 
 .locate-button:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(194, 58, 104, 0.05);
 }
 
 .locate-button:disabled {
@@ -940,7 +940,7 @@ input {
 
 .dialog-error {
   margin: 0;
-  color: #ffb59b;
+  color: #a32446;
   font-size: 12.5px;
   line-height: 1.5;
 }
@@ -992,7 +992,7 @@ input {
 
 .result-button:hover,
 .result-button:focus-visible {
-  background: rgba(255, 255, 255, 0.055);
+  background: rgba(194, 58, 104, 0.06);
 }
 
 .result-pin {
@@ -1037,11 +1037,11 @@ input {
 }
 
 .wi-cloud-fill {
-  fill: rgba(255, 255, 255, 0.13);
+  fill: rgba(255, 184, 208, 0.55);
 }
 
 .wi-cloud-line {
-  stroke: rgba(255, 255, 255, 0.72);
+  stroke: rgba(158, 62, 98, 0.5);
   stroke-width: 1.4;
 }
 
@@ -1051,12 +1051,12 @@ input {
 }
 
 .wi-fog line {
-  stroke: rgba(255, 255, 255, 0.62);
+  stroke: rgba(120, 60, 84, 0.5);
   stroke-width: 2;
 }
 
 .wi-snow circle {
-  fill: rgba(255, 255, 255, 0.88);
+  fill: rgba(194, 58, 104, 0.55);
 }
 
 .wi-bolt {
